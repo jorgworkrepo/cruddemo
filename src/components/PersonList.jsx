@@ -1,6 +1,7 @@
 import React from 'react';
 
 function PersonList(props) {
+    
     const {persons, editPerson, deletePersonById} = props;
 
     return (
@@ -25,21 +26,6 @@ function PersonList(props) {
                             <th>{p.name}</th>
                             <th>{p.gender}</th>
                             <th>{p.email}</th>
-                            <td>
-                                <a
-                                    style={{marginRight: "2px"}}
-                                    className="btn btn-outline-primary"
-                                    href="#" role="button"
-                                    onClick={() => editPerson(p)}
-                                >edit</a>
-                                <a
-                                    className="btn btn-outline-danger"
-                                    href="#"
-                                    role="button"
-                                    onClick={() => deletePersonById(p.id)}
-                                >delete</a>
-                            </td>
-
                         </tr>
                     ))
                 }

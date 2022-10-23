@@ -12,19 +12,12 @@ function App() {
 
     const URL = "http://localhost:3456/api";
 
-    useEffect(() => {
-        getAllPersons((data) => {
-            setPersons(data)
-        });
-    }, []);
-
     const getAllPersons = (callback) => {
-        fetchData(URL, callback)
+    
     }
 
     const deletePersonById = (id) => {
-        fetchData(`${URL}/${id}`, () => {}, "DELETE");
-        setPersons(persons.filter(p => p.id !== id));
+
     }
 
     const writeErrorMessage = (msg) =>{
@@ -33,16 +26,11 @@ function App() {
     }
 
     const addAndUpdatePerson = (person) => {
-        if(person.gender === "") {
-            writeErrorMessage("Please select a gender!")
-            return;
-        }
-        person.id && fetchData(`${URL}/${person.id}`, (person) => {setPersons(persons.map( p => p.id === person.id ? {...person} : p))}, "PUT", person);
-        person.id || fetchData(`${URL}/${person.id}`, (data) => setPersons([...persons, data]), "POST", person);
+
     }
 
     const editPerson = (person) => {
-        setPersonEdit(person)
+
     }
 
     return (
@@ -72,8 +60,3 @@ function App() {
 }
 
 export default App
-
-// const index = persons.findIndex( p => p.id === person.id)
-// const array = [...persons]
-// array[index] = person
-// setPersons([...array])
