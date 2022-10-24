@@ -13,7 +13,7 @@ function App() {
     const URL = "http://localhost:3456/api";
 
     const getAllPersons = (callback) => {
-    
+        //fetchData()
     }
 
     const deletePersonById = (id) => {
@@ -26,7 +26,7 @@ function App() {
     }
 
     const addAndUpdatePerson = (person) => {
-
+        //fetchData()
     }
 
     const editPerson = (person) => {
