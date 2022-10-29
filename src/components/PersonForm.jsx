@@ -3,11 +3,11 @@ import React, {useState, useEffect} from "react";
 
 export default function PersonForm({addAndUpdatePerson, personToEdit, initialize, errorRef}) {
 
-    const handleChange = (evt) => {
-    }
+    const [person, setPerson] = useState()
 
-    const handleSubmit = (evt) => {
-    }
+    const handleChange = (evt) => {}
+
+    const handleSubmit = (evt) => {}
 
     return (
         <div>

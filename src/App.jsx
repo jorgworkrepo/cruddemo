@@ -12,26 +12,22 @@ function App() {
 
     const URL = "http://localhost:3456/api";
 
+    useEffect( () => {
+    }, []);
+
     const getAllPersons = (callback) => {
-        //fetchData()
     }
 
-    const deletePersonById = (id) => {
-
-    }
+    const deletePersonById = (id) => {}
 
     const writeErrorMessage = (msg) =>{
         errorRef.current.innerText = msg;
         setTimeout( () => errorRef.current.innerText = "", 2000)
     }
 
-    const addAndUpdatePerson = (person) => {
-        //fetchData()
-    }
+    const addAndUpdatePerson = (person) => {}
 
-    const editPerson = (person) => {
-
-    }
+    const editPerson = (person) => {}
 
     return (
         <div className="container">

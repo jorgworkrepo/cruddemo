@@ -10,8 +10,8 @@
     {
       "id": 2,
       "age": "19",
-      "name": "Susi",
-      "email": "susi@test.com",
+      "name": "Michelle",
+      "email": "michelle@test.com",
       "gender": "female"
     },
     {
@@ -23,9 +23,16 @@
     },
     {
       "id": 4,
-      "age": "45",
+      "age": "49",
       "name": "Karl",
       "email": "karl@test.com",
+      "gender": "female"
+    },
+    {
+      "id": 5,
+      "age": "26",
+      "name": "Michael",
+      "email": "michael@test.com",
       "gender": "male"
     }
   ]

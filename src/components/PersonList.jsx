@@ -1,7 +1,7 @@
 import React from 'react';
 
 function PersonList(props) {
-    
+
     const {persons, editPerson, deletePersonById} = props;
 
     return (
