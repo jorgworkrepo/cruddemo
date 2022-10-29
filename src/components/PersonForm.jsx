@@ -17,8 +17,8 @@ export default function PersonForm({addAndUpdatePerson, personToEdit, initialize
 
     const handleSubmit = (evt) => {
         evt.preventDefault();
-        addAndUpdatePerson(person);
-        setPerson(initialize)
+        const success = addAndUpdatePerson(person)
+        success && setPerson(initialize);
     }
 
     return (

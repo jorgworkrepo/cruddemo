@@ -33,12 +33,16 @@ function App() {
     }
 
     const addAndUpdatePerson = (person) => {
+
         if(person.gender === "") {
             writeErrorMessage("Please select a gender!")
-            return;
+            return false;
         }
+
         person.id && fetchData(`${URL}/${person.id}`, (person) => {setPersons(persons.map( p => p.id === person.id ? {...person} : p))}, "PUT", person);
-        person.id || fetchData(`${URL}/${person.id}`, (data) => setPersons([...persons, data]), "POST", person);
+        person.id || fetchData(URL, (data) => setPersons([...persons, data]), "POST", person);
+
+        return true;
     }
 
     const editPerson = (person) => {
